@@ -1,0 +1,121 @@
+print("Este es un algoritmo para encriptar")
+x= input("¿Que frase quieres encriptar? : ").lower() or 'hola'
+y= list(x)
+w=z=y
+
+def encriptar(p):
+    for i in range(len(p)):
+        if p[i] == 'a':
+            z[i] = 'Z'
+        elif p[i] == 'b':
+            z[i] = 'Y'
+        elif p[i] == 'c':
+            z[i] = 'X'
+        elif p[i] == 'd':
+            z[i] = 'W'
+        elif p[i] == 'e':
+            z[i] = 'V'
+        elif p[i] == 'f':
+            z[i] = 'U'
+        elif p[i] == 'g':
+            z[i] = 'T'
+        elif p[i] == 'h':
+            z[i] = 'S'
+        elif p[i] == 'i':
+            z[i] = 'R'
+        elif p[i] == 'j':
+            z[i] = 'Q'
+        elif p[i] == 'k':
+            z[i] = 'P'
+        elif p[i] == 'l':
+            z[i] = 'O'
+        elif p[i] == 'm':
+            z[i] = 'N'
+        elif p[i] == 'n':
+            z[i] = 'M'
+        elif p[i] == 'o':
+            z[i] = 'L'
+        elif p[i] == 'p':
+            z[i] = 'K'
+        elif p[i] == 'q':
+            z[i] = 'J'
+        elif p[i] == 'r':
+            z[i] = 'I'
+        elif p[i] == 's':
+            z[i] = 'H'
+        elif p[i] == 't':
+            z[i] = 'G'
+        elif p[i] == 'u':
+            z[i] = 'F'
+        elif p[i] == 'v':
+            z[i] = 'E'
+        elif p[i] == 'w':
+            z[i] = 'D'
+        elif p[i] == 'x':
+            z[i] = 'C'
+        elif p[i] == 'y':
+            z[i] = 'B'
+        elif p[i] == 'z':
+            z[i] = 'A'
+    print("Frase encriptada:")
+    print(''.join(z))
+
+def desencriptar(q):
+    for i in range(len(q)):
+        if q[i] == 'Z':
+            w[i] = 'a'
+        elif q[i] == 'Y':         
+            w[i] = 'b'
+        elif q[i] == 'X':    
+            w[i] = 'c'
+        elif q[i] == 'W':
+            w[i] = 'd'
+        elif q[i] == 'V':#5
+            w[i] = 'e'
+        elif q[i] == 'U':
+            w[i] = 'f'
+        elif q[i] == 'T':
+            w[i] = 'g'
+        elif q[i] == 'S':
+            w[i] = 'h'
+        elif q[i] == 'R':
+            w[i] = 'i'
+        elif q[i] == 'Q':#10
+            w[i] = 'j'
+        elif q[i] == 'P':
+            w[i] = 'k'
+        elif q[i] == 'O':
+            w[i] = 'l'
+        elif q[i] == 'N':
+            w[i] = 'm'
+        elif q[i] == 'M':
+            w[i] = 'n'
+        elif q[i] == 'L':#15
+            w[i] = 'o'
+        elif q[i] == 'K':
+            w[i] = 'p'
+        elif q[i] == 'J':
+            w[i] = 'q'
+        elif q[i] == 'I':
+            w[i] = 'r'
+        elif q[i] == 'H':
+            w[i] = 's'
+        elif q[i] == 'G':#20
+            w[i] = 't'
+        elif q[i] == 'F':
+            w[i] = 'u'
+        elif q[i] == 'E':
+            w[i] = 'v'
+        elif q[i] == 'D':
+            w[i] = 'w'
+        elif q[i] == 'C':
+            w[i] = 'x'
+        elif q[i] == 'B': 
+            w[i] = 'y'
+        elif q[i] == 'A':
+            w[i] = 'z'
+    print("Frase desencriptada:")
+    print(''.join(x))
+    
+encriptar(y)
+desencriptar(x)
